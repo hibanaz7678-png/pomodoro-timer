@@ -25,7 +25,6 @@ body {
     position: relative;
 }
 
-/* Background Glow */
 .background-glow {
     position: absolute;
     width: 300px;
@@ -62,12 +61,40 @@ header p {
     margin-top: 4px;
 }
 
+/* STUDY TRACKER STYLING */
+.stats-container {
+    display: flex;
+    justify-content: center;
+    margin: 15px 0 5px;
+}
+
+.stat-card {
+    background: rgba(15, 23, 42, 0.6);
+    padding: 10px 20px;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.stat-number {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--accent-red);
+}
+
+.stat-label {
+    font-size: 0.75rem;
+    color: var(--text-secondary);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
 /* Timer Ring */
 .timer-display {
     position: relative;
     width: 260px;
     height: 260px;
-    margin: 20px auto;
+    margin: 10px auto 20px;
     display: flex;
     justify-content: center;
     align-items: center;
