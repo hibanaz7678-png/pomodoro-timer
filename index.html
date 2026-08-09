@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minimalist Pomodoro Study Timer | Boost Productivity</title>
+    <meta name="description" content="An aesthetic, customizable Pomodoro study timer with clean progress animations and interval tracking.">
+    
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=JetBrains+Mono:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="background-glow"></div>
+
+    <main class="app-container">
+        <header>
+            <h1>🍅 Focus Flow</h1>
+            <p id="status">Ready to work?</p>
+        </header>
+
+        <div class="timer-display">
+            <svg class="progress-ring" width="260" height="260">
+                <circle class="progress-ring-circle-bg" stroke="#1e293b" stroke-width="12" fill="transparent" r="110" cx="130" cy="130"/>
+                <circle id="progress-circle" class="progress-ring-circle" stroke="#ff5555" stroke-width="12" stroke-linecap="round" fill="transparent" r="110" cx="130" cy="130"/>
+            </svg>
+            <div id="time" class="time-text">25:00</div>
+        </div>
+
+        <div class="controls">
+            <button id="start-btn" class="btn primary">Start</button>
+            <button id="reset-btn" class="btn secondary">Reset</button>
+        </div>
+
+        <div class="modes">
+            <button class="mode-btn active" data-time="25" data-mode="Work">Work</button>
+            <button class="mode-btn" data-time="5" data-mode="Short Break">Short Break</button>
+            <button class="mode-btn" data-time="15" data-mode="Long Break">Long Break</button>
+        </div>
+        
+        <footer class="footer">
+            <a href="https://www.buymeacoffee.com" target="_blank" rel="noopener" class="coffee-link">☕ Support this project</a>
+        </footer>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html> 
